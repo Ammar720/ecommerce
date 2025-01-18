@@ -10,7 +10,7 @@ import 'package:injectable/injectable.dart';
 
 @Singleton(as: AuthRemoteDataSource)
 class AuthAPIRemoteDataSource implements AuthRemoteDataSource {
-  final Dio _dio ;
+  final Dio _dio;
 
   AuthAPIRemoteDataSource(this._dio);
 

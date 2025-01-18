@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:ecommerce/core/app_bloc_observer.dart';
 import 'package:ecommerce/core/di/service_locator.dart';
 import 'package:ecommerce/core/routes/route_generator.dart';
@@ -12,7 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = AppBlocObserver();
- await configrationDependencies();
+  await configrationDependencies();
   runApp(const ECommerceApp());
 }
 
@@ -30,7 +29,7 @@ class ECommerceApp extends StatelessWidget {
         builder: (_, __) => const MaterialApp(
           debugShowCheckedModeBanner: false,
           onGenerateRoute: RouteGenerator.getRoute,
-          initialRoute: Routes.login,
+          initialRoute: Routes.home,
         ),
       ),
     );

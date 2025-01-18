@@ -8,8 +8,8 @@ import 'package:injectable/injectable.dart';
 
 @singleton
 class AuthCubit extends Cubit<AuthState> {
- final Register _register ;
- final Login _login ;
+  final Register _register;
+  final Login _login;
 
   AuthCubit(this._register, this._login) : super(AuthInitial());
 
